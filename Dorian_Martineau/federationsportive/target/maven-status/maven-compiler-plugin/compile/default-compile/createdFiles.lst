@@ -1,0 +1,11 @@
+entity\Sportif.class
+entity\Epreuve.class
+domaine\Sportif.class
+entity\Licencier.class
+entity\Competition.class
+client\GestionCompete.class
+domaine\Epreuve.class
+entity\Amateur.class
+domaine\Amateur.class
+domaine\Licencier.class
+domaine\Competition.class
