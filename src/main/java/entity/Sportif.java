@@ -2,6 +2,7 @@ package entity;
 
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -38,14 +39,12 @@ public class Sportif {
 	protected String tel;
 	@Column(name="fax")
 	protected String fax;
-	@Column(name="dossardCompet")
-	protected int dossardCompet;
 	
 	@ManyToMany
-	protected List<Competition> listCompet;
+	protected List<Inscription> listInscr;
 	
 	public Sportif(String nomSportif, String prenomSportif, String adresse, int cp, String ville, String pays,
-			String email, String tel, String fax, int dossardCompet) {
+			String email, String tel, String fax) {
 		super();
 		this.nomSportif = nomSportif;
 		this.prenomSportif = prenomSportif;
@@ -56,7 +55,6 @@ public class Sportif {
 		this.email = email;
 		this.tel = tel;
 		this.fax = fax;
-		this.dossardCompet = dossardCompet;
 	}
 	public int getIdSportif() {
 		return idSportif;
@@ -117,12 +115,6 @@ public class Sportif {
 	}
 	public void setFax(String fax) {
 		this.fax = fax;
-	}
-	public int getDossardCompet() {
-		return dossardCompet;
-	}
-	public void setDossardCompet(int dossardCompet) {
-		this.dossardCompet = dossardCompet;
 	}
 	
 }

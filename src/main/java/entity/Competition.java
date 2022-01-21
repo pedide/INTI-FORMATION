@@ -29,8 +29,8 @@ public class Competition {
 	@OneToMany(cascade = CascadeType.ALL, mappedBy="compet")
 	private List<Epreuve> listEpr;
 	
-	@ManyToMany
-	private List<Sportif> listSport;
+	@OneToMany
+	private List<Inscription> listInscr;
 	
 	public Competition(String dateCompet, String nomCompet, String villeCompet,List<Epreuve> listEpr) {
 		super();

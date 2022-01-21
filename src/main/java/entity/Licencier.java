@@ -13,7 +13,7 @@ public class Licencier extends Sportif{
 	private String nomClub;
 	
 	public Licencier(Sportif sport, int numLicence, String nomClub) {
-		super(sport.nomSportif, sport.prenomSportif, sport.adresse, sport.cp, sport.ville, sport.pays, sport.email, sport.tel, sport.fax, sport.dossardCompet);
+		super(sport.nomSportif, sport.prenomSportif, sport.adresse, sport.cp, sport.ville, sport.pays, sport.email, sport.tel, sport.fax);
 		this.numLicence = numLicence;
 		this.nomClub = nomClub;
 	}
