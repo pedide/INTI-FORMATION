@@ -24,6 +24,7 @@ public class FederationMain {
 			Competition compet2	= new Competition( "2017/03/21" , "MUDDAY" , "ANTIBE");
 			Competition compet3 = new Competition( "2017/08/07" , "APOCAPISEZ" , "VENCE");
 			
+			// ajoute de la persistence à em
 			em.persist(compet1);
 			em.persist(compet2);
 			em.persist(compet3);
