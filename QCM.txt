@@ -1,0 +1,10 @@
+Exercice 3:
+1_a,b
+2_a,c
+3_a
+4_a,b
+5_b
+6_c
+7_d
+8_a
+9_a,b
