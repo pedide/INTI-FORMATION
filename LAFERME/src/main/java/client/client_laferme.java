@@ -36,11 +36,11 @@ public class client_laferme {
 			em.persist(adopt1);
 			em.persist(ach1);
 			
-			/*
+			
 			System.out.println("--------------------------------------------------");
 			System.out.println("Tous les Clients qui ont achetés une voiture");
 			System.out.println("--------------------------------------------------");
-			String voitClient = "SELECT c from Achat a JOIN a.Cli c ";
+			String voitClient = "SELECT a.cli from Achat a ";
 			Query voitClientJPQL = em.createQuery(voitClient);
 			List<Clients> listvoitClient = voitClientJPQL.getResultList();
 			for(Clients c : listvoitClient) {System.out.println(c.toString());}
@@ -58,11 +58,10 @@ public class client_laferme {
 			System.out.println("--------------------------------------------------");
 			System.out.println("Toutes les animaux adoptés par un client");
 			System.out.println("--------------------------------------------------");
-			String animAdopt = "SELECT a from Animal a"
-							 +" LEFT JOIN Adoption ON idAnim = animal_idAnim";
+			String animAdopt = "SELECT a.anim from Adoption a";
 			Query animAdoptJPQL = em.createQuery(animAdopt);
 			List<Animal> listanimAdopt = animAdoptJPQL.getResultList();
-			for(Animal a : listanimAdopt) {System.out.println(a.toString());}*/
+			for(Animal a : listanimAdopt) {System.out.println(a.toString());}
 			
 			tnx.commit();
 			
